@@ -1,4 +1,11 @@
+![Volunteer Management System Design](assets/cover.svg)
+
 # Volunteer Management System Design
+
+**Design + Windows UI prototype** · [Portfolio](https://github.com/HM-023) · [Requirements](docs/requirements.md) · [Use cases](docs/use-cases.md) · [Acceptance criteria](docs/acceptance-tests.md)
+
+[![Windows build](https://github.com/HM-023/VolunteerManagementSystemDesign/actions/workflows/build.yml/badge.svg)](https://github.com/HM-023/VolunteerManagementSystemDesign/actions/workflows/build.yml)
+
 
 An analysis and interface-prototyping case study for a **fictional nonprofit organization** coordinating volunteers, community projects and donation requests.
 
@@ -9,16 +16,9 @@ An analysis and interface-prototyping case study for a **fictional nonprofit org
 - Use-case relationships and a basic lifecycle for volunteer matching and donations
 - A small **.NET 8 Windows Forms in-memory demo** to illustrate the proposed UI, with no user data or external integrations
 
-## Architecture sketch
+## Prototype boundary
 
-```mermaid
-flowchart TD
-    A[Volunteer] --> UI[UI prototype]
-    B[Coordinator] --> UI
-    C[Donor] --> UI
-    UI --> Service[Conceptual business workflows]
-    Service --> Store[(Persistent database — not implemented)]
-```
+![Architecture overview](assets/architecture.svg)
 
 ## Included
 
@@ -41,3 +41,4 @@ The demo is intentionally scoped: it has two tabs, validates a few inputs and di
 ## Status
 
 Design case study + minimal educational UI prototype. No claim is made that a production management platform exists. The original collected requirements, meeting recordings and screenshots have been excluded to protect privacy and intellectual property rights. Earlier design work was collaborative; confirm original contribution rights before adding historical artifacts.
+
